@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact - Fashion Store">
+    <title>Contact - Fashion Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo/logo.png" alt="Behold This" class="logo-img logo-light" style="height:48px;max-width:180px;display:block;" />
+                    <img src="assets/logo/logo-dark.png" alt="Behold This" class="logo-img logo-dark" style="height:48px;max-width:180px;display:block;" />
+                </a>
+            </div>
+            <!-- Cart Icon Button -->
+            <button class="cart-toggle" aria-label="Ver carrito">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-count" id="cart-count" style="display:none;">0</span>
+            </button>
+            <!-- Dark/Light Mode Toggle Icon -->
+            <button class="theme-toggle" aria-label="Toggle dark or light mode">
+                <span class="theme-icon" id="theme-icon">🌙</span>
+            </button>
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger-menu" aria-label="Toggle navigation menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <!-- Main Navigation -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html#news" class="nav-link">NEWS</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li>
+                    <li class="nav-item"><a href="workstore.html" class="nav-link">WORKS / STORE</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
+                    <li class="nav-item"><a href="link.html" class="nav-link">LINK</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content">
+        <section class="contact-section">
+            <h2 class="section-title">CONTACT</h2>
+            <p>Email: <a href="mailto:info@fashionstore.com">info@fashionstore.com</a></p>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="social-icons" style="justify-content:center;display:flex;gap:var(--spacing-sm);margin-bottom:1rem;">
+                <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Behold This. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Cart Panel (hidden by default) -->
+    <div id="cart-panel" class="cart-panel" style="display:none;">
+        <div class="cart-panel-content">
+            <button id="close-cart-panel" class="close-cart-panel" aria-label="Cerrar carrito">&times;</button>
+            <h2 class="cart-panel-title">Tu carrito</h2>
+            <div id="cart-items-container"></div>
+            <div class="cart-panel-total">
+                Total: <span id="cart-panel-total-amount">$0.00</span>
+            </div>
+            <button id="cart-checkout-btn" class="cart-checkout-btn">Finalizar compra</button>
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="app.js"></script>
+</body>
+</html> 
